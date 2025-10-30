@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <form method="post">
+            <!-- personal info -->
+            <section id="personal-info">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">Full Name</label><br>
+                    <input type="text" id="fname" name="fn" placeholder="Your Full Name"/><br>
+                    <label for="mail">Email</label><br>
+                    <input type="email" id="mail" name="em" placeholder="asd@xyz.com"/><br>
+                    <label for="pwd">Password</label><br>
+                    <input type="password" id="pwd" name="pw"/><br>
+                    <label for="birthdate">Date of Birth</label><br>
+                    <input type="date" id="birthdate" name="pw"/>
+                    <input type="time"/>
+                </fieldset>
+            </section>
+
+            <!-- training info -->
+             <section id="training-info">
+                <fieldset>
+                    <legend>Training Information</legend>
+                    <label for="training">Training</label><br>
+                    <input type="radio" id="culinary" name="course" value="Culinary"/>
+                    <label for="culinary">Culinary</label><br>
+                    <input type="radio" id="gardening" name="course" value="Gardening"/>
+                    <label for="gardening">Gardening</label><br>
+                    <input type="radio" id="fishing" name="course" value="Fishing"/>
+                    <label for="fishing">Fishing</label>
+                    <br> <br/>
+
+                    <label for="clevel">Training Level</label><br>
+                    <select id="course-level" name="clevel">
+                        <option value="no-exp">No Experience</option>
+                        <option value="novice">Novice</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="experienced">Experienced</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                    <br> <br/>
+
+                    <label for="lang">Language</label><br>
+                    <input type="checkbox" id="c-lang-en" name="course-lang">
+                    <label for="c-lang-en">English</label>
+                    <input type="checkbox" id="c-lang-id" name="course-lang">
+                    <label for="c-lang-id">Indonesian</label>
+                    <input type="checkbox" id="c-lang-other" name="course-lang">
+                    <label for="c-lang-other">Other</label>
+                </fieldset>
+            </section>
+
+            <!-- motivation -->
+            <section>
+                <fieldset>
+                    <legend>Motivation</legend>
+                    <label for="motivation-textarea">Tell us why you want to have this training:</label><br>
+                    <textarea id="motivation-textarea" name="reason" rows="5" cols="33" placeholder="I want to be a superhuman."></textarea>
+                </fieldset>
+            </section>
+
+            <input type="reset" value="Reset Form"/>
+            <input type="submit" value="Submit"/>
+            <button>Click me to get an error</button>
+        </form>
+    </main>
+</body>
+</html>
